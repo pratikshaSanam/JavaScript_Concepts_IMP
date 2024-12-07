@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreed and rest oprator</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5];
+        let spredopp = [...arr];
+        console.log(spredopp)
+
+
+        function abc(a, ...rest){
+            return rest;
+        }
+        console.log(abc(10,34,56,78,34,5,6));
+    </script>
+</body>
+</html>

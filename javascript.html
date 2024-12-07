@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>hii</h1>
+</body>
+<script>
+  //   console.log("heloo pratuu");
+
+
+  // function createCounter(){
+  //   let count = 0;
+
+  //   function increment(){
+  //       count++;
+  //       console.log(count);
+  //   }
+  //   return  increment;
+  // }
+
+  // const counter =createCounter();
+  // counter();
+
+
+
+  // Global scope
+// let globalVar = 'I am global';
+
+// function outerFunction() {
+//     // Function scope
+//     let outerVar = 'I am outer';
+
+//     function innerFunction() {
+//         // Function scope nested within outerFunction
+//         let innerVar = 'I am inner';
+//         console.log(globalVar); // Accessible
+//           // Accessible
+//         console.log(innerVar);  // Accessible
+//     }
+
+//     innerFunction();
+//     // console.log(innerVar); // Error: innerVar is not defined
+//     console.log(outerVar);
+// }
+
+// outerFunction();
+// console.log(globalVar); // Accessible
+// console.log(outerVar);  // Error: outerVar is not defined
+
+
+
+
+
+
+// Global context
+// console.log(this === window); // Output: true
+
+// // Function context
+// function greet() {
+//     console.log(this);
+// }
+// greet(); // Output: window (in non-strict mode)
+
+// // Object method context
+// const person = {
+//     name: 'Alice',
+//     greet: function() {
+//         console.log('Hello, my name is ' + this.name);
+//     }
+// };
+// person.greet(); // Output: Hello, my name is Alice
+
+  
+
+// function fetchData(callback) {
+//     setTimeout(function() {
+//         callback('Data fetched');
+//     }, 2000);
+// }
+
+// fetchData(function(data) {
+//     console.log(data); // Output: Data fetched (after 2 seconds)
+// });
+
+
+
+// async function fetchData() {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve('Data fetched');
+//         }, 2000);
+//     });
+// }
+
+// async function getData() {
+//     const data = await fetchData();
+//     console.log(data); // Output: Data fetched (after 2 seconds)
+// }
+
+// getData();
+
+
+// 
+
+
+</script>
+</html>

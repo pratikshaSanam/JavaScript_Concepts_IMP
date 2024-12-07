@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <div>
+        setTimeout
+    </div>
+    <script>
+
+
+//this  is  for settimeout
+//  function checkTimer(){
+
+//     setTimeout(()=>{
+//         console.log("this  function is  executed after some time dealy")
+//     },"5000")
+//  }
+//  checkTimer();
+
+
+
+
+//this  is  for  set interval
+// function checkTimer(){
+
+//     setInterval(()=>{
+//         console.log("this  function is  executed after some time dealy")
+//     },"5000")
+//  }
+//  checkTimer();
+
+
+
+
+
+//event lopp handling function using setTimeout
+
+// function ineventCkecker(){
+//     console.log("the function executed");
+//     setTimeout(()=>{
+//         console.log("the set timmer  function is  execute");
+//     },5000)
+// }
+//ineventCkecker()
+//let var const exampale
+
+
+// function accessibleVeriable(){
+//     var a = 20;
+//     let b = 30;
+//     console.log(a+b);
+// }
+
+// accessibleVeriable()
+
+
+// function chnageConst(){
+//     const a = "pratiksha";
+//    const a ="sanam"; 
+//     console.log(a);
+// }
+// chnageConst()
+
+// function chnageConst(){
+//     let a = "pratiksha";
+//    let a ="sanam"; 
+//     console.log(a);
+// }
+// chnageConst()
+
+
+
+//  function animale(){
+// var name = "cat";
+// let bride ="parcian"
+// const color = "balck"
+
+// console.log(name);
+// console.log(bride);
+// console.log(color)
+
+//  }
+//  animale()
+
+//  function petAnimal(){
+
+// console.log(name);
+// console.log(bride);
+// console.log(color)
+//  }
+
+//  petAnimal()
+
+
+// function createCounter() {
+//   let count = 0;
+
+//   function increment() {
+//     count++;
+//     console.log(count);
+//   }
+
+//   return increment;
+// }
+
+// // Get the closure function
+// const counter = createCounter();
+
+// counter();
+
+// function numerOper(){
+//     let a = 20;
+//     let b = 50;
+
+//     function adition(){
+//         console.log(a+b);
+//     }
+//     adition();
+//     function multiplication(){
+//         console.log(a*b);
+//     }
+//     multiplication();
+// }
+// numerOper();
+
+
+
+
+// Create a Map
+// const phoneNumbers = new Map();
+
+// // Add key-value pairs
+// phoneNumbers.set("Alice", "123-456-7890");
+// phoneNumbers.set("Bob", "987-654-3210");
+
+// // Check if a key exists
+// if (phoneNumbers.has("Charlie")) {
+//   console.log("Charlie's number not found.");
+// } else {
+//   console.log("Charlie does not have a phone number in this map.");
+// }
+
+// // Get the value for a key
+// const aliceNumber = phoneNumbers.get("Alice");
+// console.log("Alice's number:", aliceNumber);
+
+// // Iterate over the Map entries (key-value pairs)
+// for (const [name, number] of phoneNumbers) {
+//   console.log(`${name}: ${number}`);
+// }
+
+
+// const userList = new Map(); // Create a new Map object to store user data
+
+// userList.set("pratiksha", "7719927297"); // Add user "pratiksha" and her phone number
+// userList.set("sanam", "7719989011");     // Add user "sanam" and her phone number
+
+// // Improved checking for "doli" with specific message
+// if (userList.has("doli")) {
+//   console.log("Doli's phone number is:", userList.get("doli")); // Access if present
+// } else {
+//   console.log("Doli is not in the list."); // Clear message
+// }
+
+// // Retrieve and print pratiksha's number
+// const pratikshaNumber = userList.get("pratiksha");
+// console.log("Pratiksha's number is:", pratikshaNumber);
+
+// // Iterate and print all user names and numbers
+// for (const [name, number] of userList) {
+//   console.log(`${name} : ${number}`); // Use template literal for cleaner formatting
+// }
+
+
+
+
+
+
+//reduser  example
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// // Calculate the sum of all numbers
+// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log(sum); // Output: 15
+
+// // Find the maximum number (without initial value)
+// const max = numbers.reduce((maxSoFar, current) => (current > maxSoFar ? current : maxSoFar));
+// console.log(max); // Output: 5
+
+
+// const numbersArray = [1, 2, 3, 4, 5, 6, 7];
+
+// function calculateSum() {
+//   const sum = numbersArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+//   console.log("The sum of the numbers is:", sum); // Clear output message
+// }
+
+// calculateSum(); // Call the function to calculate and print the sum
+
+
+
+
+// const numbers = [1, 5, 3, 8, 2];
+// const threshold = 4;
+
+// const greaterThanThreshold = numbers.filter(number => number > threshold);
+// console.log(greaterThanThreshold); // Output: [5, 8]
+
+
+
+
+// let number = [1,2,3,4,5,6];
+// let thenum = 4;
+// const greaterThanThenum = number.filter(number=> number > thenum);
+// console.log(greaterThanThenum);
+
+
+
+
+// Extract even numbers using a callback function
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+// console.log(evenNumbers); // Output: [2, 4, 6]
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+//     console.log(evenNumbers);
+
+
+// use  of trhe  tis  and  there functinality
+
+// const data = {
+//     name : 'pratiksha',
+//     addrees : 'chikhali',
+
+
+//  objScceses(){
+//     console.log("hello how are  you" , this.name);
+// },
+// }
+
+// data.objScceses();
+
+
+
+// const person = {
+//   name: "Alice",
+//   greet() {
+//     console.log("Hello, my name is " + this.name);
+   
+//   },
+// };
+
+// person.greet(); // Output: Hello, my name is Alice
+
+
+
+// function greet(greeting) {
+//   console.log(greeting + ", " + this.name);
+// }
+
+// const person1 = { name: "Charlie" };
+// const person2 = { name: "David" };
+
+// greet.call(person1, "Hi");   // Output: Hi, Charlie
+// greet.apply(person2, ["Hello"]); // Output: Hello, David
+
+
+// function greet(gretting){
+//     console.log(gretting + " ," + this.name);
+// }
+// const person1 ={name: "pratiksha"};
+// greet.call(person1, "hi");
+// greet.apply(person1, ["hello"]);
+
+
+
+
+
+//     </script>
+// </body>
+// </html>

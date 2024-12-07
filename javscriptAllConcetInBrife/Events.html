@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events  in Javascript</title>
+</head>
+<!-- <button id="changeDateButton">chnage</button> -->
+<span id="dateText"> original text</span>
+<input  id="changeDateButton" type="text">
+
+<div id="parent" style="padding: 20px; background: lightblue;">
+    Parent
+    <button id="child">Child Button</button>
+  </div>
+<body>
+    
+    <script>
+
+        //handlinh a  click  event
+
+        //crete the  button  wich is  change the  color  of the bakground
+
+
+//         const btn = document.querySelector("button");
+
+// function random(number) {
+//   return Math.floor(Math.random() * (number + 1));
+// }
+
+// btn.addEventListener("click", () => {
+//   const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+//   document.body.style.backgroundColor = rndCol;
+// });
+
+// const btn = document.querySelector("button");
+// btn.addEventListener("click", (e)=>{
+//     console.log("button Clicked" , e.target);
+// })
+
+// document.getElementById('changeDateButton').addEventListener("click",()=>{
+// const dateText = document.getElementById("dateText");
+// const currentDate = new Date().toLocaleDateString();
+// dateText.textContent = currentDate;
+// })
+
+
+// document.getElementById('changeDateButton').addEventListener("click", ()=>{
+//     const dateText = document.getElementById('dateText');
+//     const changedata = "heloo";
+//     dateText.innerHTML = changedata;
+// })
+
+
+//adding event listener 
+
+// document.getElementById('changeDateButton').addEventListener("click" ,()=>{
+//     alert("button clicked")
+// })
+
+//event object
+
+// document.getElementById('changeDateButton').addEventListener("input", ()=>{
+//     console.log(`input value : ${event.target.value}`)
+// })
+
+
+//event bubbling and capturing
+
+document.getElementById("parent").addEventListener("click", () => {
+    console.log("Parent clicked!");
+  });
+
+  document.getElementById("child").addEventListener("click", (event) => {
+    console.log("Child clicked!");
+    event.stopPropagation(); // Stops the event from bubbling
+  });
+
+
+
+    </script>
+</body>
+</html>

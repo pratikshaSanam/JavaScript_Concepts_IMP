@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback in javscript</title>
+</head>
+<body>
+    <h1>check the call back</h1>
+    <button id="click">click me</button>
+    
+    <script>
+//         setTimeout(function(){
+// console.log("timmer")
+//         },5000)
+//         function x(y){
+//           console.log("x")
+//           y();
+//         }
+//         x(function y(){
+//             console.log("y")
+
+//         })
+
+
+        // function addevent (){
+        //     let count = 0
+        // document.getElementById("click")
+        // .addEventListener("click",  function xyz(){
+
+        //     console.log("btton clicked", ++count);
+
+        // })
+        // }
+        // addevent();
+
+        // function greet(name, callback){
+        //     console.log(`hello, ${name}`)
+        //     callback();
+        // }
+        // function askedqeation(){
+        //     console.log("how are you?")
+        // }
+
+        // greet("jhone", askedqeation);
+
+        //asynchronous  call  back example
+        function fetchdata(callback){
+            console.log("data 1");
+            setTimeout(()=>{
+                console.log("data 2");
+                callback("data 3")
+            },2000);
+
+        }
+        function processdata(data){
+            console.log(`data : ${data}`)
+        }
+        fetchdata(processdata);
+
+
+    </script>
+</body>
+</html>

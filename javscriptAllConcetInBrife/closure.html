@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Closure</title>
+</head>
+<body>
+    <script>
+
+
+ //     function x(){
+    //         var a = 7;
+    //         function y(){
+                
+    //             console.log(a);
+    //         }
+    //         return y;
+    //     }
+    //    var z = x();
+    //    console.log(z);
+    //    z();
+
+
+        // function z() {
+        //     var b = 100;
+        //     function x() {
+        //         var a = 7;
+        //         function y() {
+        //             debugger;
+        //             console.log(a, b);
+        //         }
+        //         y();
+        //     }
+        //     x();
+        // }
+        // z();
+
+
+
+        // function x(){
+        //     var i = 4;
+        //     setTimeout(function(){
+        //         console.log(i)
+        //     },5000);
+        //     console.log("hello namste");
+        // }
+        // x();
+
+
+//         function x() {
+//     for (var i = 1; i <= 5; i++) {
+//         // Use an IIFE (Immediately Invoked Function Expression) to create a closure
+//         (function(x) {
+//             setTimeout(function() {
+//                 console.log(x);
+//             }, x * 1000); // Use lowercase 'x' here
+//         })(i); // Pass 'i' as an argument to the IIFE
+//     }
+//     console.log("hello namaste"); // Corrected the spelling of 'namaste' and moved outside the loop
+// }
+
+// x();
+
+
+// function outerfunction(name){
+//     const gretting = "hello";
+
+//     return function innerfunction(){
+//         console.log(`${gretting},${name}`);
+//     };
+// }
+// const greetjhon = outerfunction("jhone")
+// greetjhon();
+
+//use closure  in addition multiplication
+
+// function opration(){
+//     let num1 = 1;
+//     let num2 = 2;
+
+//     return{
+//         additio : function(){
+//             return num1 + num2
+//         },
+//         substract : function(){
+//             return num1 - num2
+//         },
+//         multiply : function(){
+//             return num1 * num2
+//         }
+//     }
+// }
+
+// const calculator = opration();
+
+// console.log("addition",calculator.additio());
+// console.log("sub",calculator.substract());
+// console.log("mul",calculator.multiply());
+
+
+
+
+
+    </script>
+</body>
+</html>
